@@ -31,6 +31,7 @@ const InputHandler=(data)=>{
          
     }
 
+   
   
 
   return (
@@ -41,14 +42,14 @@ const InputHandler=(data)=>{
       <button  onClick={Decrease} className="btn btn-danger">Decrease</button>
 
 
- <br /> <br />
-     
-   &nbsp; 
-   <input type="text" name="name" value={input.name} onChange={InputHandler} placeholder="Name" /> <br />
+
+     <form>
+     &nbsp;  
+    <input type="text" name="name" value={input.name} onChange={InputHandler} placeholder="Name" /> 
    &nbsp;  
-   <input type="email" name="email" value={input.email} onChange={InputHandler} placeholder="Email" /> <br />
-    <button className="btn btn-success" >Submit</button>
- 
+   <input type="email" name="email" value={input.email} onChange={InputHandler} placeholder="Email" /> 
+
+    </form>
  
  <div className="render_inputs">
   Name:  {input.name} &nbsp; email :  {input.email}
