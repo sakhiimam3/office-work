@@ -1,49 +1,70 @@
-.nav-links{
+.nav-links {
        margin-left: auto !important;
 }
 
-.links{
-     text-decoration: none;
-     color: gray;
-     font-size: 20px;
-     font-family: 'Times New Roman', Times, serif;
-     text-transform: capitalize;
+.links {
+       text-decoration: none;
+       color: gray;
+       font-size: 20px;
+       font-family: 'Times New Roman', Times, serif;
+       text-transform: capitalize;
 }
 
-.links:hover{
+.links:hover {
        color: green;
 }
 
 /* main section css start  */
-.main-layout-section{
-         height: 82vh;
+.main-layout-section {
+       height: 82vh;
 
 }
-.responsiveCard{
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          padding-top: 30px;
-          
-          
+
+.responsiveCard {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-top: 30px;
+
+
 }
+
 /* main section css end  */
 
 
 
 /* footer css start  */
 
-.footer{
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      text-align: center;
-      background-color: gray;
-      padding: 0.9rem;
-      font-size: 20px;
-      color: beige;
+.footer {
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+       text-align: center;
+       background-color: gray;
+       padding: 0.9rem;
+       font-size: 20px;
+       color: beige;
 }
 
+.counter-app {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 20px;
 
 
+}
+
+.counter-app button {
+       margin-left: 10px;
+}
+.counter-app span {
+         margin-left: 10px;
+         font-size: 20px;
+         font-weight: bold;
+}
+
+.render_inputs{
+          margin-left: 20px ;
+}
 /* footer css end  */

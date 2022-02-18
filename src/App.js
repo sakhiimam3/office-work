@@ -4,10 +4,7 @@ import Routing from './Config/Routing';
 function App() {
   return (
     <>   
-    
-
     <Routing />
-        
     </>
   );
 }
