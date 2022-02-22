@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Components/Header';
-import Footer from '../Components/Footer';
+// import Footer from '../Components/Footer';
 import { Route }  from "react-router-dom"
 
 
@@ -11,7 +11,7 @@ const Layout = ({children}) => {
             <main className='main-layout-section'>
                 {children}
             </main>
-          <Footer/>
+          {/* <Footer/> */}
         </>
     )
 }

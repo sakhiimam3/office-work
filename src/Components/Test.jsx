@@ -8,7 +8,7 @@ const Test = (props) => {
     }
   return (
     <div>
-         <button  onClick={()=>props.alert(data)}>Click me</button>
+         <button  onClick={()=>props.alert(data.Name)}>Click me</button>
     </div>
   )
 }

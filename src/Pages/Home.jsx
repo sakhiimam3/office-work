@@ -1,34 +1,64 @@
-import React from "react";
-import CardData from "../Components/CardData.jsx";
-import Card from "../Components/Card";
-import Counter from "../Components/Counter.jsx";
-
+import React, { createContext} from "react";
+// import CardData from "../Components/CardData.jsx";
+// import Card from "../Components/Card";
+import LoginForm from "../Components/LoginForm.jsx";
+import Api from "../Components/Api.jsx";
+import { Container, Row, Col } from "react-bootstrap";
+const UserContex = createContext();
 const Home = () => {
 
-  const Showing_Card = (val) => {
-    return (
-      <>
-        <Card imgsrc={val.imgsrc}  key={val.id}  UpperLine={val.title} /> 
-        
-      </>
-    );
-  };
+  
+  // const Showing_Card = (val) => {
+  //   return (
+  //     <>
+      
+  //     <Container>
+  //            <Row>
+  //              <Col sm>
+  //              <Card imgsrc={val.imgsrc} key={val.id} UpperLine={val.title} />
+  //         </Col>
+  //       </Row>
+  //     </Container>
+     
+  //     </>
+  //   );
+  // };
 
-
-  // function Greeting(greet){
-  //       alert(greet.email)
-  // }
+  let array = ["grapes", "mango", "banana"];
 
   return (
-      <>
-             <Counter />
-       <div className="responsiveCard">{CardData.map(Showing_Card)}</div> 
-        
-   
-       
-   
-      </>
-  )
-}
+    <>
+      <Container>
+        <Row>
+          <Col>
+     
+            <Api />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+     
+            <UserContex.Provider value={array}>
+              <LoginForm />
+            </UserContex.Provider>
+          </Col>
+        </Row>
+
+
+      </Container>
+     
+          
+  
+            
+    
+          
+          
+         
+     
+    </>
+  );
+};
 
 export default Home;
+
+export { UserContex };

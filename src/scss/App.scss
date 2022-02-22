@@ -1,0 +1,95 @@
+@import "./partial";
+@import "./variable.scss";
+
+.nav-links {
+  margin-left: auto !important;
+
+  .links {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: capitalize;
+    &:hover {
+      color: green;
+    }
+  }
+}
+
+/* main section css start  */
+.main-layout-section {
+  min-height: 100vh;
+  background-color: $bg;
+}
+
+h1 {
+  @include commonCode(0.2rem, capitalize, green);
+}
+h2 {
+  @include commonCode(0.3rem, uppercase, blue);
+}
+
+.responsiveCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+/* main section css end  */
+
+.counter-app {
+  @include flexprop;
+  margin-top: 20px;
+}
+
+.counter-app button {
+  margin-left: 10px;
+}
+.counter-app span {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form {
+  @include flexprop;
+  flex-direction: column;
+}
+
+.render_inputs {
+  margin-left: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px !important;
+  li {
+    list-style: none;
+    margin-left: 20px;
+  }
+}
+
+select {
+  margin-left: 500px !important;
+}
+
+/* footer css start  */
+
+.footer {
+  text-align: center;
+  background-color: gray;
+  position: relative;
+  font-size: 27px;
+  color: beige;
+  margin-bottom: 0px;
+  padding: 10px;
+  position: relative;
+
+  bottom: 0;
+}
+
+/* footer css end  */
