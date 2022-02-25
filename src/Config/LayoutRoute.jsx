@@ -1,30 +1,28 @@
 import React from 'react'
 import Header from '../Components/Header';
-// import Footer from '../Components/Footer';
-import { Route }  from "react-router-dom"
+import Footer from '../Components/Footer';
+import { Outlet}  from "react-router-dom"
 
 
-const Layout = ({children}) => {
+const Layout = () => {
     return (
-        <>
+        <> 
           <Header/>
-            <main className='main-layout-section'>
-                {children}
-            </main>
           {/* <Footer/> */}
+
         </>
     )
 }
 
 
-const LayoutRoute = ({component: Component, ...rest}) => {  
+const LayoutRoute = () => {  
     return ( 
       <> 
-      <Route {...rest} render={matchProps => (  
-        <Layout>  
-            <Component {...matchProps} />  
-        </Layout>  
-      )} />  
+      <div className='main'>
+      <Layout>
+        <Outlet/>
+      </Layout>
+      </div> 
       </>
     )  
   };

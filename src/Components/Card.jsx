@@ -1,26 +1,15 @@
-import React from 'react'
-import {Card, Col, Container,Row} from "react-bootstrap"
+import React from "react";
+import { Button, Card } from "react-bootstrap";
 const Cards = (props) => {
-
   return (
-    <Container >
-      <Row>
-        <Col sm={4}>
-        <Card style={{ width: '18rem' ,height:"2rem" }}>
-    <Card.Img variant="top"  src={props.imgsrc} />
-    <Card.Body>
-      <Card.Title>{props.UpperLine}</Card.Title>
-      
-    </Card.Body>
-  </Card>
-        </Col>
-     
-      </Row>
-       
-    </Container>
-   
+    <Card style={{ width: "18rem", }}>
+      <Card.Img variant="bottom" className="img-fluid" src={props.imgsrc} />
+      <Card.Body>
+        <Card.Title>{props.UpperLine}</Card.Title>
+      </Card.Body>
+        <Button className="my-2">Details</Button>
+    </Card>
+  );
+};
 
-  )
-}    
-
-export default Cards
+export default Cards;

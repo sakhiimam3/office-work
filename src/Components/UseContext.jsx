@@ -1,5 +1,6 @@
 import { createContext } from "react";
-const MainContex = createContext();
+export const MainContex = createContext();
+
 
 const DataProvider=(props)=>{
       const data={
@@ -15,6 +16,4 @@ const DataProvider=(props)=>{
 
 
 export default DataProvider;
-export {
-      MainContex
-}
+

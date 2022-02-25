@@ -1,8 +1,15 @@
 @mixin flexprop {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+
+@mixin flexprop2 {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 
 @mixin commonCode($par1, $par2, $par3) {
   letter-spacing: $par1;
